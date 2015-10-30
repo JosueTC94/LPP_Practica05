@@ -9,9 +9,9 @@ class Test_Fraccion < Test::Unit::TestCase
     @ob2 = Numero_fraccionario.new(3,2)
   end
   def test_simple
-    assert_equal("1/2".to_s, @origen.to_s) #Invoco a los metodos
+    assert_equal("1/2", @origen.to_s) #Invoco a los metodos
 
-    assert_equal("1/1".to_s, @unidad.to_s)
+    assert_equal("1/1", @unidad.to_s)
   
     assert_equal("5/2", (@origen.multiplico_valor(5)).to_s, "Producto escalar")
 
